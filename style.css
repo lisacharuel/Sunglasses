@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./icebergs-8430043_1280.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo a{
+    color: #fff;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 100;
+    text-shadow: rgba(7, 28, 72, 0.7);
+}
+
+.logo span{
+    color: rgb(6, 35, 69);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nomlogo{
+    margin-top: -10px;
+    font-size: 20px;
+    color:black;
+    -webkit-text-stroke: 0.1px ;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background: #fff;
+    color: #000;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titre h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+.bouton{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

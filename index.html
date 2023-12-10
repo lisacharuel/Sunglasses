@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" media="all" rel="stylesheet">
+    <title>Mon Site E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <img src="LunettesLogo.png" alt=" Sunglasses shop " width="100" heighet="100">
+            <div class="nomlogo">
+                <h2>Sunglasses Shop</h2>
+            </div>                
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#" class="tab-link" id="products-tab">Produits</a>
+                </li>
+                <li>
+                    <a href="#">Panier</a>
+                </li>
+                <li>
+                    <a href="#">A propos de nous</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            </div>
+            <div class="titre">
+                <h1>TOUTES NOS LUNETTES DE SOLEIL</h1>
+            </div>
+            <div class="bouton">
+                <a href="#" class"btn">COLLECTIONS</a>
+                <a href="#" class"btn">ACCESSOIRES</a>
+            </div>
+    </header>
+
+
+
+
+    <section id="products-section" style="display: none;">
+        <h2>Nos Produits</h2>
+    
+        <div class="product">
+            <h3>Lunettes de ski</h3>
+            <p>Description du produit</p>
+            <button>Ajouter au Panier</button>
+        </div>
+    
+        <div class="product">
+            <h3>Lunettes de cyclisme</h3>
+            <p>Description du produit</p>
+            <button>Ajouter au Panier</button>
+        </div>
+    
+        <div class="product">
+            <h3>Lentilles de soleil</h3>
+            <p>Description du produit</p>
+            <button>Ajouter au Panier</button>
+        </div>
+        <!-- Ajoutez d'autres produits ici -->
+    </section>
+
+    <script>
+        // Récupérez l'onglet "Produits" et la section des produits
+        const productsTab = document.getElementById("products-tab");
+        const productsSection = document.getElementById("products-section");
+    
+        // Ajoutez un gestionnaire d'événements au clic sur l'onglet "Produits"
+        productsTab.addEventListener("click", function () {
+            // Affichez ou masquez la section des produits en fonction de son état actuel
+            if (productsSection.style.display === "none") {
+                productsSection.style.display = "block";
+            } else {
+                productsSection.style.display = "none";
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Mon Site E-commerce. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
